@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伝統映像資産の再編集・再設計でつくる、36ヶ月で成立する持続的コンテンツ事業構想</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#f4f4f4',
+                edgeLabelBackground: '#fff',
+                tertiaryColor: '#fff'
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="page-title">伝統映像資産の再編集・再設計でつくる、<br>36ヶ月で成立する持続的コンテンツ事業構想</h1>
+            <div class="hero-summary">
+                <h2>一文要約</h2>
+                <p>伝統的な映像制作資産を再編集・再設計し、<strong>新規視聴層と既存文化層を接続</strong>しながら、<strong>36ヶ月の損益とキャッシュフローを成立</strong>させる事業計画を提示します。</p>
+            </div>
+            <div class="hero-key-takeaways">
+                <h3>このページでわかること</h3>
+                <ul>
+                    <li>どんな市場機会があり、なぜ今取り組むべきか</li>
+                    <li>何が競争優位性になり、どうやって再現性を持たせるか</li>
+                    <li>36ヶ月で「生存 → 拡張 → 確立」へ進むロードマップ</li>
+                    <li>収益・費用・キャッシュの見方（判断できる粒度）</li>
+                    <li>制作体制・課金ロジック・公開物（ページ/資料）の全体像</li>
+                </ul>
+            </div>
+            
+            <!-- 図1：前提三角図「機会 × 優位 × 36ヶ月」 -->
+            <div class="diagram-container">
+                <div class="mermaid">
+                    graph TD
+                    A[市場機会<br>Opportunity] --- B[競争優位性<br>Advantage]
+                    B --- C[36ヶ月計画<br>Roadmap]
+                    C --- A
+                    style A fill:#fff,stroke:#333,stroke-width:2px
+                    style B fill:#fff,stroke:#333,stroke-width:2px
+                    style C fill:#fff,stroke:#333,stroke-width:2px
+                </div>
+                <p class="figure-caption">図1：事業構想の3つの柱</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-container">
+        
+        <section id="theme-purpose">
+            <h2>1. テーマと目的</h2>
+            <div class="subsection">
+                <h3>1-1. テーマ</h3>
+                <p>本構想のテーマは、<strong>伝統的な映像制作資産を“現代の視聴行動に合う形”へ再編集・再設計し、継続的に収益を生む事業へ転換する</strong>ことです。</p>
+            </div>
+            <div class="subsection">
+                <h3>1-2. 目的（ゴール）</h3>
+                <p>単発の作品成功ではなく、次を同時に成立させます。</p>
+                <ul>
+                    <li><strong>36ヶ月の損益計画（PL）</strong>が継続的に回る</li>
+                    <li><strong>キャッシュフロー推移</strong>が破綻しない</li>
+                    <li>作品と制作資産が循環し、<strong>自社経済圏</strong>として持続する</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="why-now">
+            <h2>2. なぜ今か（課題と機会の前提）</h2>
+            <div class="subsection">
+                <h3>2-1. 課題：価値はあるのに、判断できない形になりがち</h3>
+                <p>市場機会や作品価値が語られても、次が曖昧だと意思決定が止まります。</p>
+                <ul>
+                    <li>収益化の形（何を、どう売り、どう継続させるか）</li>
+                    <li>制作の再現性（継続供給できる体制と資産化）</li>
+                    <li>初期キャッシュの設計（谷を越える条件）</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>2-2. 機会：伝統資産は“再設計”で広い層に届く</h3>
+                <p>伝統的資産は、再編集・再設計によって</p>
+                <ul>
+                    <li>既存文化層（価値を理解している層）</li>
+                    <li>新規視聴層（新しい体験を求める層）</li>
+                </ul>
+                <p>を接続する起点になり得ます。</p>
+
+                <!-- 図2：橋の図 -->
+                <div class="diagram-container">
+                    <div class="mermaid">
+                        graph LR
+                        Existing[既存文化層] <-->Bridge((再編集・再設計))
+                        Bridge <--> New[新規視聴層]
+                        style Existing fill:#e0e0e0,stroke:#333
+                        style New fill:#e0e0e0,stroke:#333
+                        style Bridge fill:#fff,stroke:#333,stroke-width:4px
+                    </div>
+                     <p class="figure-caption">図2：再編集・再設計による層の接続</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="opportunity">
+            <h2>3. 市場機会（Opportunity）</h2>
+            <div class="subsection">
+                <h3>3-1. 市場機会の核</h3>
+                <p>市場機会の核は、<strong>伝統的映像制作資産の再編集・再設計により、新規視聴層と既存文化層を接続できる</strong>点にあります。</p>
+            </div>
+            <div class="subsection">
+                <h3>3-2. 需要の形（現代適合）</h3>
+                <p>需要は次の方向へ寄りやすい前提で設計します。</p>
+                <ul>
+                    <li>デジタル配信前提</li>
+                    <li>短尺で入口を作る</li>
+                    <li>没入度で関係を深める</li>
+                    <li>シリーズ化で継続視聴へ接続する</li>
+                </ul>
+
+                <!-- 挿入要素：小図（流れ） -->
+                <div class="diagram-container">
+                    <div class="mermaid">
+                        graph LR
+                        A[短尺] --> B[没入] --> C[シリーズ化] --> D[継続視聴]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="advantage">
+            <h2>4. 競争優位性（Advantage）</h2>
+            <div class="subsection">
+                <h3>4-1. 競争優位性の核</h3>
+                <p>競争優位性の核は、<strong>実演を基盤とした制作資産の統合活用</strong>にあります。</p>
+            </div>
+            <div class="subsection">
+                <h3>4-2. “品質”ではなく“継続供給の再現性”としての優位</h3>
+                <p>優位性は単に良い作品が作れる、ではなく、次を一体で持てる点にあります。</p>
+                <ul>
+                    <li>制作資産（技術・衣装・演出など）の蓄積</li>
+                    <li>統合的に設計できる制作体制</li>
+                    <li>継続供給と横断展開（再利用・連携）に耐える構造</li>
+                </ul>
+
+                <!-- 図3：因果図 -->
+                <div class="diagram-container">
+                    <div class="mermaid">
+                        graph LR
+                        Assets[制作資産] --> Integration[統合]
+                        Integration --> Supply[継続供給]
+                        Supply --> Expansion[横断展開]
+                        style Assets fill:#f9f9f9,stroke:#333
+                        style Integration fill:#f9f9f9,stroke:#333
+                        style Supply fill:#f9f9f9,stroke:#333
+                        style Expansion fill:#f9f9f9,stroke:#333
+                    </div>
+                     <p class="figure-caption">図3：優位性の構造</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="roadmap">
+            <h2>5. 36ヶ月計画（PL × Cashflow の骨格）</h2>
+            <div class="subsection">
+                <h3>5-1. 計画の基本姿勢</h3>
+                <p>36ヶ月計画は、細部の精密さより、まず次を“判断できる形”で揃えます。</p>
+                <ul>
+                    <li>赤字期間があっても、<strong>想定内にコントロールされている</strong>こと</li>
+                    <li>損益転換点が設計されていること</li>
+                    <li>キャッシュの谷（底・期間・回復条件）が設計されていること</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>5-2. 3幕構成で語る（生存 → 拡張 → 確立）</h3>
+                <ul class="roadmap-list">
+                    <li><strong>初期（生存）</strong>：収益構造の安定化とキャッシュの谷を越える</li>
+                    <li><strong>中期（拡張）</strong>：利益の積み上げで拡張に耐える体質へ</li>
+                    <li><strong>後期（確立）</strong>：自社経済圏の確立に向けて持続的利益体質を固める</li>
+                </ul>
+
+                <!-- 図4：ロードマップ -->
+                <div class="diagram-container">
+                    <div class="mermaid">
+                        gantt
+                            title 36ヶ月ロードマップ
+                            dateFormat  YYYY-MM
+                            axisFormat  %
+                            section フェーズ
+                            初期（生存） :a1, 2024-01, 12M
+                            中期（拡張） :a2, after a1, 12M
+                            後期（確立） :a3, after a2, 12M
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="monthly-metrics">
+            <h2>6. 月次の読み方（役員が迷わない“解釈ルール”）</h2>
+            <div class="subsection">
+                <h3>6-1. 月次を見るときの3つの観点</h3>
+                <ul>
+                    <li><strong>収益</strong>：立ち上げ → 定着 → 拡張へ段階的に伸びる</li>
+                    <li><strong>費用</strong>：段階的に増えるが、収益の伸びが上回る構造を作る</li>
+                    <li><strong>損益</strong>：赤字期間／転換点／利益の積み上げを明確に分けて示す</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>6-2. キャッシュフローの意味づけ（不安の先回り）</h3>
+                <p>キャッシュは初期に減る可能性があります。重要なのは「減少の有無」ではなく、次の管理です。</p>
+                <ul>
+                    <li>減少が想定を超えない</li>
+                    <li>回復条件が設計されている</li>
+                    <li>計画と実行の乖離で谷が深く長くならない</li>
+                </ul>
+
+                <!-- 図5：U字概念図 -->
+                <div class="diagram-container">
+                    <div class="u-curve-chart">
+                        <!-- CSS/SVG based simplified chart will be here or Mermaid -->
+                         <div class="mermaid">
+                            xychart-beta
+                            title "キャッシュフロー推移イメージ"
+                            x-axis ["初期", "中期", "後期"]
+                            y-axis "キャッシュ残高" 100 --> 0
+                            line [100, 20, 150]
+                        </div>
+                    </div>
+                     <p class="figure-caption">図5：谷 → 回復 → 厚み</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="divider">
+
+        <section id="initial-cash">
+            <h2>7. 初期キャッシュ確保（底・期間・条件）</h2>
+            <p>初期キャッシュ確保は、意思決定できる最小単位として次の3点セットで置きます。</p>
+            <div class="three-boxes">
+                <div class="box">
+                    <h4>キャッシュの底</h4>
+                    <p>どこまで下がり得るか</p>
+                </div>
+                <div class="box">
+                    <h4>期間</h4>
+                    <p>いつまで耐える必要があるか</p>
+                </div>
+                <div class="box">
+                    <h4>回復条件</h4>
+                    <p>何が起きたら回復に入るか</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="growth-strategy">
+            <h2>8. 成長戦略（機会×優位×計画を一本化）</h2>
+             <div class="mermaid">
+                graph TD
+                Opportunity[機会] --> Minimum[最小成立]
+                Minimum --> Differentiation[差別化]
+                Differentiation --> Expansion[横断展開]
+                Expansion --> Ecosystem[経済圏]
+            </div>
+            <div class="subsection">
+                <h3>8-1. 初期（生存）</h3>
+                <ul>
+                    <li>市場機会の検証と最小成立</li>
+                    <li>価値提示を最小で成立させ、継続供給へ接続する</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>8-2. 中期（拡張）</h3>
+                <ul>
+                    <li>実演基盤と制作資産の統合活用を前面に出して差別化を強める</li>
+                    <li>横断展開へ向け、再利用可能な資産を積み上げる</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>8-3. 後期（確立）</h3>
+                <ul>
+                    <li>作品世界の横断展開で自社経済圏へ寄せる</li>
+                    <li>継続関係と収益の厚みで、単発依存を脱却する</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="production-system">
+            <h2>9. 制作体制（人間中心＋協調）</h2>
+            <div class="subsection">
+                <h3>9-1. 基本方針</h3>
+                <p>制作の中核は、<strong>役者の実演</strong>に置きます。<br>
+                技術は代替ではなく、補助・拡張・最適化の役割を担います。<br>
+                重要判断は人間が保持し、整合と再現性を強めます。</p>
+            </div>
+            <div class="subsection">
+                <h3>9-2. 工程の層（論理アーキテクチャ）</h3>
+                <div class="layer-diagram">
+                    <div class="layer">企画・脚本層 <span class="desc">構造整理・整合チェック</span></div>
+                    <div class="arrow">↓</div>
+                    <div class="layer">実演設計層 <span class="desc">演技・動線・感情曲線</span></div>
+                    <div class="arrow">↓</div>
+                    <div class="layer">視覚設計層 <span class="desc">絵コンテ、統合演出方針</span></div>
+                    <div class="arrow">↓</div>
+                    <div class="layer">映像統合層 <span class="desc">編集、品質検査、リズム分析</span></div>
+                    <div class="arrow">↓</div>
+                    <div class="layer">権利・資料管理層 <span class="desc">検索・照合、最終確認</span></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="billing-logic">
+            <h2>10. 課金ロジック（Billing Logic Architecture）</h2>
+            <div class="subsection">
+                <h3>10-1. 三層モデル（基盤→拡張→継続）</h3>
+                
+                <!-- 図6：課金三層ピラミッド -->
+                <div class="pyramid-container">
+                    <div class="pyramid-level level-3">
+                        <span class="level-title">3. 継続関係（経済圏収益）</span>
+                        <span class="level-desc">定期提供／参加型／継続契約</span>
+                    </div>
+                    <div class="pyramid-level level-2">
+                        <span class="level-title">2. 体験拡張（付加価値収益）</span>
+                        <span class="level-desc">融合体験／制作過程／世界観深掘り</span>
+                    </div>
+                    <div class="pyramid-level level-1">
+                        <span class="level-title">1. コンテンツ提供（基盤収益）</span>
+                        <span class="level-desc">本編／再編集版／再構成版</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="subsection">
+                <h3>10-2. 36ヶ月との整合（段階拡張）</h3>
+                <ul>
+                    <li><strong>初期</strong>：既存資産再活用中心（低追加コストで成立）</li>
+                    <li><strong>中期</strong>：再構成と横断展開で効率化と単価向上</li>
+                    <li><strong>後期</strong>：継続関係比率を高め、収益の厚みを作る</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="risks">
+            <h2>11. リスク（3つに絞って管理する）</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h4>1. 計画と実行の乖離</h4>
+                    <p>数字と現場がずれる</p>
+                </div>
+                <div class="card">
+                    <h4>2. キャッシュの谷が深い/長い</h4>
+                    <p>初期破綻のリスク</p>
+                </div>
+                <div class="card">
+                    <h4>3. 前提の不整合</h4>
+                    <p>機会・優位・計画が矛盾して見える</p>
+                </div>
+            </div>
+            <p class="risk-note"><strong>対策は構造で抑える</strong></p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="conclusion">
+            <h2>12. まとめ（回収の1行）</h2>
+            <p class="conclusion-text">
+                市場機会は「伝統資産の再定義」にあり、競争優位性は「実演を基盤とした制作資産の統合活用」にある。<br>
+                その前提のもと、36ヶ月の損益・キャッシュ推移を成立させる成長戦略を提示する。
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="cta-footer">
+        <div class="container">
+            <h3>お問い合わせ・資料請求</h3>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">お問い合わせ</a>
+                <a href="#" class="btn btn-secondary">資料請求（36ヶ月計画詳細）</a>
+                <a href="#" class="btn btn-outline">協業提案</a>
+            </div>
+            <p class="footer-note">伝統映像資産の再編集・再設計プロジェクト</p>
+        </div>
+    </footer>
+
+</body>
+</html>

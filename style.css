@@ -1,0 +1,345 @@
+/* Base Styles */
+:root {
+    --text-color: #333;
+    --heading-color: #111;
+    --bg-color: #fff;
+    --accent-color: #2c3e50; /* 濃い藍色のような色 */
+    --accent-light: #ecf0f1;
+    --border-color: #ddd;
+    --font-sans: 'Noto Sans JP', sans-serif;
+    --font-serif: 'Noto Serif JP', serif;
+    --spacing-unit: 1rem;
+    --container-width: 800px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--text-color);
+    line-height: 1.8;
+    background-color: var(--bg-color);
+}
+
+h1, h2, h3, h4 {
+    color: var(--heading-color);
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    line-height: 1.4;
+}
+
+h2 {
+    font-size: 1.6rem;
+    border-bottom: 2px solid var(--accent-light);
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+strong {
+    font-weight: 700;
+    background: linear-gradient(transparent 70%, #e0e0e0 70%);
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.content-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f9f9f9;
+    padding: 5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.hero-summary {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 4px solid var(--accent-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.hero-summary h2 {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hero-key-takeaways {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 4rem 0;
+}
+
+/* Diagrams */
+.diagram-container {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.figure-caption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+    font-family: var(--font-serif);
+}
+
+/* Mermaid Customization */
+.mermaid {
+    display: flex;
+    justify-content: center;
+}
+
+/* Specific Section Styles */
+.three-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.box {
+    background: #fdfdfd;
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.box h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Layer Diagram */
+.layer-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.layer {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border: 1px solid #333;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+}
+
+.layer .desc {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: #555;
+    margin-top: 0.25rem;
+}
+
+.arrow {
+    color: #999;
+}
+
+/* Pyramid Diagram */
+.pyramid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.pyramid-level {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.level-3 {
+    background-color: #2c3e50; /* Top */
+    width: 60%;
+    clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+    z-index: 3;
+}
+
+.level-2 {
+    background-color: #34495e; /* Middle */
+    width: 80%;
+    clip-path: polygon(7.5% 0, 92.5% 0, 100% 100%, 0% 100%);
+     z-index: 2;
+}
+
+.level-1 {
+    background-color: #7f8c8d; /* Base */
+    width: 100%;
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+     z-index: 1;
+}
+
+.level-title {
+    display: block;
+    font-size: 1.1rem;
+}
+.level-desc {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+
+/* Risk Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 4px;
+}
+
+.risk-note {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer CTA */
+.cta-footer {
+    background-color: #f4f4f4;
+    padding: 5rem 0;
+    margin-top: 4rem;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: 2px solid var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: #1a252f;
+    border-color: #1a252f;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #555;
+    border: 2px solid #999;
+}
+
+.footer-note {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    :root {
+        --container-width: 100%;
+    }
+    
+    .three-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
